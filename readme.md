@@ -1,6 +1,6 @@
 # My Online Web Store
-Author: Daniel Hwang
-Date: September 2021
+Author: Daniel Hwang  
+Start Date: June 2022
 
 ---
 

@@ -1,0 +1,14 @@
+#main_title {
+    text-align: center;
+}
+
+#magnifying_glass{
+    position: absolute;
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#test{
+    margin-top: 50%;
+}

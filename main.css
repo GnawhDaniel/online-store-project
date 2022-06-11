@@ -12,3 +12,12 @@
 #test{
     margin-top: 50%;
 }
+
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+nav > li {
+    display: inline;
+}

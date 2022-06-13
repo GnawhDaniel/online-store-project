@@ -13,6 +13,12 @@
 
 <body>
 <header>
+  <div id="magnifying_search_bar">
+    <div>
+      <label for="search_bar">Search</label>
+      <input id="search_bar" type="text">
+    </div>
+  </div>
   <nav style="height: 24px;">
     <ul id="social_media">
       <li>
@@ -39,10 +45,10 @@
   </nav>
   <div>
     <hr style="width: 100%;">
-  </div>
-  <div>
     <div id="magnifying_glass">
-      <img id="test" src="./images/magnifying_glass.png" style="height: 24px; width: 24px;"/>
+      <button onclick="searchBarFunction()">
+        <img id="test" src="./images/magnifying_glass.png" style="height: 24px; width: 24px;"/>
+      </button>
     </div>
     <h1 style="font-size: 75px;" id="main_title">The Last Stop</h1>
   </div>
@@ -61,14 +67,15 @@
       <a href="https://www.google.com/">Sale</a>
     </div>
   </div>
+  <hr style="width: 100%;">
 </header>
-<hr style="width: 100%;">
+<div class="gray_out" onclick="exitSearch()"></div>
 <div class="pic_boxes">
   <img src="./images/knifes_front_1.jpg">
 </div>
 <hr style="width: 100%;">
 
-<footer>
+<footer onclick="exitSearch()">
   <pre>
     <address>
     CONTACT US
@@ -80,6 +87,34 @@
     </address>       
   </pre>
 </footer>
+
+<script>
+function searchBarFunction()
+{
+  console.log("Test");
+  var x = document.getElementById("magnifying_search_bar");
+  if (x.style.display == "none")  
+  {
+    x.style.display = "block";
+    document.getElementsByClassName("gray_out")[0].style.display = "block";
+  }
+  else 
+  {
+    x.style.display = "none";
+  }
+}
+
+function exitSearch()
+{
+  console.log("test: exitSearch()")
+  var x = document.getElementById("magnifying_search_bar");
+  if (x.style.display != "none")
+  {
+    x.style.display = "none";
+    document.getElementsByClassName("gray_out")[0].style.display = "none";
+  }
+}
+</script>
 </body>
 
 </html>

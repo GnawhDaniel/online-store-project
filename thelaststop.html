@@ -93,15 +93,8 @@ function searchBarFunction()
 {
   console.log("Test");
   var x = document.getElementById("magnifying_search_bar");
-  if (x.style.display == "none")  
-  {
-    x.style.display = "block";
-    document.getElementsByClassName("gray_out")[0].style.display = "block";
-  }
-  else 
-  {
-    x.style.display = "none";
-  }
+  x.style.display = "block";
+  document.getElementsByClassName("gray_out")[0].style.display = "block";
 }
 
 function exitSearch()
